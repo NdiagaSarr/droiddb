@@ -1,4 +1,5 @@
 // Utilities - Fonctions helper réutilisables
+import { Notification } from './notification.js';
 
 /**
  * Télécharge un fichier
@@ -31,17 +32,17 @@ export function formatDate(date) {
 }
 
 /**
- * Affiche un message d'erreur
+ * Affiche un message d'erreur (toast notification)
  */
 export function showError(message) {
-    alert(`❌ Erreur: ${message}`);
+    Notification.error(message);
 }
 
 /**
- * Affiche un message de succès
+ * Affiche un message de succès (toast notification)
  */
 export function showSuccess(message) {
-    alert(`✅ ${message}`);
+    Notification.success(message);
 }
 
 /**
