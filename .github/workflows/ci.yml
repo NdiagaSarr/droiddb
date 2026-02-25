@@ -20,7 +20,12 @@ jobs:
         
     - name: Check PHP syntax
       run: |
-        find . -name "*.php" -type f -exec php -l {} \; 2>&1 | grep -v "No syntax errors"
+        errors=$(find . -name "*.php" -type f -exec php -l {} \; 2>&1 | grep -v "No syntax errors" || true)
+        if [ -n "$errors" ]; then
+          echo "$errors"
+          exit 1
+        fi
+        echo "PHP syntax OK"
         
     - name: Validate file structure
       run: |
