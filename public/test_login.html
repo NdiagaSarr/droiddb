@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Login</title>
+</head>
+<body>
+    <h1>Test API Login</h1>
+    <button onclick="testLogin()">Test Login</button>
+    <pre id="result"></pre>
+
+    <script>
+        async function testLogin() {
+            const resultEl = document.getElementById('result');
+            resultEl.textContent = 'Testing...';
+            
+            try {
+                const response = await fetch('index.php?route=auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        host: 'localhost',
+                        user: 'root',
+                        password: 'root'
+                    })
+                });
+                
+                const data = await response.json();
+                resultEl.textContent = `Status: ${response.status}\n` +
+                                     `Response: ${JSON.stringify(data, null, 2)}`;
+                
+                if (response.ok) {
+                    // Try loading databases
+                    const dbResponse = await fetch('index.php?route=db/list_dbs');
+                    const dbData = await dbResponse.json();
+                    resultEl.textContent += `\n\n=== DATABASES ===\n` +
+                                          `Status: ${dbResponse.status}\n` +
+                                          `Response: ${JSON.stringify(dbData, null, 2)}`;
+                }
+            } catch (error) {
+                resultEl.textContent = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
