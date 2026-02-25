@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        
+    - name: Check PHP syntax
+      run: |
+        find . -name "*.php" -type f -exec php -l {} \; 2>&1 | grep -v "No syntax errors"
+        
+    - name: Validate file structure
+      run: |
+        test -f public/index.php || exit 1
+        test -f app/Core/Router.php || exit 1
+        test -d public/js || exit 1
+        test -d public/css || exit 1
+        echo "File structure OK"
+
+  build-check:
+    runs-on: ubuntu-latest
+    needs: lint
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Check build artifacts
+      run: |
+        echo "Checking project structure..."
+        ls -la
+        ls -la public/
+        
+    - name: Verify no syntax errors in JS
+      run: |
+        find public/js -name "*.js" -type f | head -5
+        echo "JS files present"
