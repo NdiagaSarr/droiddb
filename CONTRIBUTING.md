@@ -11,10 +11,26 @@ git clone https://github.com/votre-username/droiddb.git
 cd droiddb
 ```
 
-3. **Créez une branche** pour votre fonctionnalité :
+3. **Créez une branche** pour votre fonctionnalité à partir de `develop` :
 ```bash
+git checkout develop
+git pull origin develop
 git checkout -b feature/nom-de-votre-feature
 ```
+
+## Workflow Git
+
+Nous utilisons un workflow **Git Flow** simplifié :
+
+- **`develop`** : Branche de développement principale. Toutes les features sont mergées ici.
+- **`main`** : Branche de production. Seuls les changements testés de `develop` sont mergés ici.
+
+**Processus :**
+1. Créer une branche feature depuis `develop`
+2. Développer et tester votre feature
+3. Faire une Pull Request vers `develop`
+4. Après review et tests, merger dans `develop`
+5. Les releases vers `main` sont gérées par les mainteneurs
 
 ##  Types de Contributions
 

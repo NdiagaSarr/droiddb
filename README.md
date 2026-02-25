@@ -347,13 +347,17 @@ Pour une utilisation en production :
 
 ## Contribution
 
-Les contributions sont les bienvenues !
+Les contributions sont les bienvenues ! Nous utilisons un workflow **develop → main** :
 
+- **`develop`** : Branche de développement. Créez vos features ici.
+- **`main`** : Branche de production. Les releases stables se font ici.
+
+**Process rapide :**
 1. Fork le projet
-2. Créez une branche (`git checkout -b feature/ma-feature`)
-3. Committez vos changements (`git commit -m 'Ajout de ma feature'`)
-4. Pushez vers la branche (`git push origin feature/ma-feature`)
-5. Ouvrez une Pull Request
+2. Créez une branche depuis `develop` : `git checkout -b feature/ma-feature develop`
+3. Committez vos changements
+4. Faites une Pull Request vers `develop`
+5. Après review, vos changements seront mergés dans `develop` puis `main`
 
 Voir [CONTRIBUTING.md](CONTRIBUTING.md) pour plus de détails.
 
@@ -367,14 +371,10 @@ Créé pour simplifier la gestion de bases de données MySQL.
 
 ## Remerciements
 
----
-
-##  Remerciements
-
 - [Outfit](https://fonts.google.com/specimen/Outfit) - Police principale
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/) - Police monospace
 - Inspiration UI : phpMyAdmin, Adminer, Beekeeper Studio
 
 ---
 
-**Profitez de Droid DB !** 🤖
+**Profitez de Droid DB !**
