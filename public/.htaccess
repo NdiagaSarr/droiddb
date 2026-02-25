@@ -1,0 +1,10 @@
+# Router toutes les requêtes vers index.php
+RewriteEngine On
+RewriteBase /droid_db/public/
+
+# Si le fichier ou dossier existe, ne pas rewriter
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Tout router vers index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
