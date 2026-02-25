@@ -1,5 +1,5 @@
 ---
-name: 💡 Feature Request
+name:  Feature Request
 about: Suggérer une nouvelle fonctionnalité
 title: '[FEATURE] '
 labels: enhancement
@@ -7,26 +7,26 @@ assignees: ''
 
 ---
 
-## 💡 Description de la Fonctionnalité
+##  Description de la Fonctionnalité
 
 Décrivez clairement la fonctionnalité souhaitée.
 
-## 🎯 Problème Résolu
+##  Problème Résolu
 
 Quel problème cette fonctionnalité résoudrait-elle ?
 
-## ✅ Solution Proposée
+##  Solution Proposée
 
 Comment devrait-elle fonctionner ?
 
-## 🔄 Alternatives Considérées
+##  Alternatives Considérées
 
 Avez-vous envisagé d'autres solutions ?
 
-## 📸 Mockups / Exemples
+##  Mockups / Exemples
 
 Si applicable, ajoutez des captures d'écran ou des dessins.
 
-## 💡 Contexte Supplémentaire
+##  Contexte Supplémentaire
 
 Toute autre information utile.

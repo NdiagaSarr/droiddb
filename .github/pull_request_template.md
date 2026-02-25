@@ -1,17 +1,17 @@
-## 📝 Description
+##  Description
 
 Décrivez les changements apportés par cette PR.
 
-## 🎯 Type de Changement
+##  Type de Changement
 
-- [ ] 🐛 Correction de bug
-- [ ] ✨ Nouvelle fonctionnalité
-- [ ] 📚 Documentation
-- [ ] ♻️ Refactoring
-- [ ] ⚡ Performance
-- [ ] 🔒 Sécurité
+- [ ]  Correction de bug
+- [ ]  Nouvelle fonctionnalité
+- [ ]  Documentation
+- [ ]  Refactoring
+- [ ]  Performance
+- [ ]  Sécurité
 
-## 🔗 Issues Liées
+##  Issues Liées
 
 Fixes # (numéro d'issue)
 
@@ -24,10 +24,10 @@ Fixes # (numéro d'issue)
 - [ ] Pas d'erreurs dans la console JS
 - [ ] Pas d'erreurs dans les logs PHP
 
-## 📸 Captures d'écran
+##  Captures d'écran
 
 Si applicable, ajoutez des captures des changements visuels.
 
-## 📝 Notes
+##  Notes
 
 Toute information supplémentaire pour les reviewers.

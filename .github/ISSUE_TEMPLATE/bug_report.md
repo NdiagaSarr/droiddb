@@ -1,5 +1,5 @@
 ---
-name: 🐛 Bug Report
+name:  Bug Report
 about: Signaler un bug pour nous aider à améliorer Droid DB
 title: '[BUG] '
 labels: bug
@@ -7,11 +7,11 @@ assignees: ''
 
 ---
 
-## 🐛 Description du Bug
+##  Description du Bug
 
 Décrivez clairement le problème rencontré.
 
-## 🔍 Pour Reproduire
+##  Pour Reproduire
 
 Étapes pour reproduire le comportement :
 
@@ -20,15 +20,15 @@ Décrivez clairement le problème rencontré.
 3. Faire '....'
 4. Voir l'erreur
 
-## ✅ Comportement Attendu
+##  Comportement Attendu
 
 Ce qui aurait dû se passer.
 
-## 📸 Captures d'écran
+##  Captures d'écran
 
 Si applicable, ajoutez des captures d'écran.
 
-## 🖥️ Environnement
+##  Environnement
 
 - **OS** : [ex: Windows 11, macOS, Ubuntu 22.04]
 - **Navigateur** : [ex: Chrome 120, Firefox 121]
@@ -36,12 +36,12 @@ Si applicable, ajoutez des captures d'écran.
 - **Version MySQL** : [ex: 8.0]
 - **Version Droid DB** : [ex: 1.0.0]
 
-## 📝 Logs
+##  Logs
 
 ```
 Collez ici les erreurs de la console JS ou les logs PHP
 ```
 
-## 💡 Informations Supplémentaires
+##  Informations Supplémentaires
 
 Tout autre détail pertinent.

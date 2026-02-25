@@ -1,4 +1,4 @@
-# 📋 Changelog
+#  Changelog
 
 Tous les changements notables de ce projet seront documentés ici.
 
@@ -10,15 +10,15 @@ et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
-- 🚧 En développement
+-  En développement
 
 ---
 
 ## [1.0.0] - 2025-02-25
 
-### 🎉 Release Initiale
+###  Release Initiale
 
-#### ✨ Fonctionnalités
+####  Fonctionnalités
 
 - **Authentification**
   - Connexion sécurisée avec sessions PHP
@@ -62,14 +62,14 @@ et ce projet adhère à [Semantic Versioning](https://semver.org/lang/fr/).
   - Menu contextuel
   - Raccourcis clavier
 
-#### 🏗️ Architecture
+####  Architecture
 
 - **Backend** : PHP 8.0+ avec architecture MVC
 - **Frontend** : JavaScript ES6+ modulaire
 - **Base de données** : MySQL 5.7+ via PDO
 - **Sécurité** : Requêtes préparées, sessions PHP
 
-#### 📝 Documentation
+####  Documentation
 
 - README complet avec installation
 - Guide de contribution

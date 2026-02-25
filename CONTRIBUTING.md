@@ -1,8 +1,8 @@
-# 🤝 Guide de Contribution
+# Guide de Contribution
 
 Merci de votre intérêt pour contribuer à **Droid DB** ! Ce guide vous explique comment participer au projet.
 
-## 🚀 Pour Commencer
+## Pour Commencer
 
 1. **Fork** le dépôt sur GitHub
 2. **Clone** votre fork localement :
@@ -16,9 +16,9 @@ cd droiddb
 git checkout -b feature/nom-de-votre-feature
 ```
 
-## 📋 Types de Contributions
+##  Types de Contributions
 
-### 🐛 Signaler un Bug
+###  Signaler un Bug
 
 Si vous trouvez un bug, créez une **Issue** avec :
 - **Titre clair** décrivant le problème
@@ -27,14 +27,14 @@ Si vous trouvez un bug, créez une **Issue** avec :
 - **Captures d'écran** si applicable
 - **Comportement attendu** vs comportement actuel
 
-### 💡 Proposer une Fonctionnalité
+###  Proposer une Fonctionnalité
 
 Pour suggérer une nouvelle fonctionnalité :
 - Expliquez **pourquoi** cette fonctionnalité serait utile
 - Décrivez **comment** elle devrait fonctionner
 - Mentionnez les **cas d'usage** possibles
 
-### 🔧 Soumettre du Code
+###  Soumettre du Code
 
 #### Avant de Commencer
 
@@ -109,27 +109,27 @@ Avant de soumettre, vérifiez :
 - [ ] Pas d'erreurs dans la console du navigateur
 - [ ] Pas d'erreurs dans les logs PHP
 
-## 📁 Structure à Respecter
+##  Structure à Respecter
 
 ```
 droid_db/
-├── app/
-│   ├── Config/        # Configuration
-│   ├── Controllers/   # Contrôleurs API
-│   ├── Core/          # Router, Core classes
-│   └── Models/        # Modèles de données
-├── public/
-│   ├── css/
-│   ├── js/
-│   │   ├── services/  # API services
-│   │   ├── modules/   # Feature modules
-│   │   ├── ui/        # UI components
-│   │   └── utils/     # Utilities
-│   └── index.php
-└── views/             # Templates HTML
+ app/
+    Config/        # Configuration
+    Controllers/   # Contrôleurs API
+    Core/          # Router, Core classes
+    Models/        # Modèles de données
+ public/
+    css/
+    js/
+       services/  # API services
+       modules/   # Feature modules
+       ui/        # UI components
+       utils/     # Utilities
+    index.php
+ views/             # Templates HTML
 ```
 
-## 🎯 Idées de Contribution
+##  Idées de Contribution
 
 ### Fonctionnalités Souhaitées
 
@@ -151,26 +151,26 @@ droid_db/
 - Documentation du code
 - Augmentation de la couverture de tests
 
-## 📝 Documentation
+##  Documentation
 
 Si vous ajoutez une fonctionnalité :
 - Mettez à jour le README.md
 - Ajoutez des commentaires dans le code
 - Créez des exemples d'utilisation si pertinent
 
-## ❓ Questions ?
+##  Questions ?
 
 - Ouvrez une **Issue** avec le label "question"
 - Contactez les mainteneurs
 
-## 🙏 Code de Conduite
+##  Code de Conduite
 
 - Soyez respectueux et constructif
 - Acceptez les critiques positives
 - Aidez les autres contributeurs
 - Gardez un esprit ouvert
 
-## 🔒 Sécurité
+##  Sécurité
 
 Si vous trouvez une vulnérabilité de sécurité :
 - **NE PAS** ouvrir une issue publique
@@ -179,6 +179,6 @@ Si vous trouvez une vulnérabilité de sécurité :
 
 ---
 
-Merci de contribuer à Droid DB ! 🎉
+Merci de contribuer à Droid DB ! 
 
 **Questions ?** N'hésitez pas à demander de l'aide.

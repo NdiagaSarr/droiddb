@@ -1,38 +1,37 @@
-# 🤖 Droid DB
+# Droid DB
 
 Une interface web moderne et intuitive pour gérer vos bases de données MySQL. Alternative légère et élégante à phpMyAdmin.
 
-[![GitHub stars](https://img.shields.io/github/stars/NdiagaSarr/droiddb?style=social)](https://github.com/NdiagaSarr/droiddb)
-[![GitHub forks](https://img.shields.io/github/forks/NdiagaSarr/droiddb?style=social)](https://github.com/NdiagaSarr/droiddb/fork)
+[![GitHub stars](https://img.shields.io/github/stars/NdiagaSarr/droiddb)](https://github.com/NdiagaSarr/droiddb)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/NdiagaSarr/droiddb/releases)
 [![PHP](https://img.shields.io/badge/PHP-8.0+-purple)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-5.7+-orange)](https://mysql.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-📦 **[Dernière release](https://github.com/NdiagaSarr/droiddb/releases/latest)** | 🐛 **[Signaler un bug](https://github.com/NdiagaSarr/droiddb/issues)** | 💡 **[Proposer une feature](https://github.com/NdiagaSarr/droiddb/issues)**
+**[Dernière release](https://github.com/NdiagaSarr/droiddb/releases/latest)** | **[Signaler un bug](https://github.com/NdiagaSarr/droiddb/issues)** | **[Proposer une feature](https://github.com/NdiagaSarr/droiddb/issues)**
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
-### 🔐 Authentification
+### Authentification
 - Connexion sécurisée avec sessions PHP
 - Support multi-utilisateurs
 - Déconnexion en un clic
 
-### 🗄️ Gestion des Bases de Données
+### Gestion des Bases de Données
 - Liste de toutes les bases de données
 - Création de nouvelles bases avec collation personnalisée
 - Suppression de bases de données
 - Renommage via déplacement de tables
 - Export SQL complet (structure + données)
 
-### 📋 Gestion des Tables
+### Gestion des Tables
 - Navigation visuelle des tables
 - Création de tables avec définition de colonnes
 - Suppression, vidage (TRUNCATE) et optimisation
 - Renommage de tables
 - Affichage de la structure (DESCRIBE)
 
-### 📊 Gestion des Données
+### Gestion des Données
 - Visualisation des données en tableau
 - Édition en ligne (double-clic sur une cellule)
 - Suppression de lignes
@@ -40,18 +39,18 @@ Une interface web moderne et intuitive pour gérer vos bases de données MySQL. 
 - Recherche avancée multi-critères
 - Export CSV et JSON
 
-### ⚡ Requêtes SQL
+### Requêtes SQL
 - Éditeur SQL intégré
 - Exécution de requêtes personnalisées
 - Import de fichiers SQL
 - Visualisation des résultats
 
-### 🔍 Index
+### Index
 - Visualisation des index d'une table
 - Création d'index (standard et unique)
 - Suppression d'index
 
-### 🎨 Interface
+### Interface
 - **Thème sombre moderne** "Blue Night"
 - Design responsive et ergonomique
 - Animations fluides
@@ -61,7 +60,7 @@ Une interface web moderne et intuitive pour gérer vos bases de données MySQL. 
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### Prérequis
 - PHP 8.0 ou supérieur
@@ -123,48 +122,48 @@ server {
 
 ---
 
-## 📁 Structure du Projet
+##  Structure du Projet
 
 ```
 droid_db/
-├── app/
-│   ├── Config/
-│   │   └── Database.php          # Configuration et connexion PDO
-│   ├── Controllers/
-│   │   ├── AuthController.php    # Gestion authentification
-│   │   └── DbController.php      # Gestion DB/tables/données
-│   ├── Core/
-│   │   └── Router.php            # Routeur API
-│   └── Models/
-│       └── DbModel.php           # Modèle d'accès aux données
-├── public/
-│   ├── css/
-│   │   └── style.css             # Styles avec variables CSS
-│   ├── js/
-│   │   ├── app.js                # Point d'entrée principal
-│   │   ├── services/
-│   │   │   └── api.js            # Service d'appels API
-│   │   ├── modules/
-│   │   │   ├── database.js       # Gestion des bases
-│   │   │   ├── table.js          # Gestion des tables
-│   │   │   ├── data.js           # Gestion des données
-│   │   │   └── index.js          # Gestion des index
-│   │   ├── ui/
-│   │   │   ├── renderer.js       # Rendu HTML
-│   │   │   ├── modals.js         # Gestion des modales
-│   │   │   └── contextMenu.js    # Menus contextuels
-│   │   └── utils/
-│   │       └── helpers.js        # Fonctions utilitaires
-│   └── index.php                 # Point d'entrée PHP
-├── views/
-│   └── main.php                  # Template principal HTML
-├── .htaccess                     # Configuration Apache
-└── README.md                     # Ce fichier
+ app/
+    Config/
+       Database.php          # Configuration et connexion PDO
+    Controllers/
+       AuthController.php    # Gestion authentification
+       DbController.php      # Gestion DB/tables/données
+    Core/
+       Router.php            # Routeur API
+    Models/
+        DbModel.php           # Modèle d'accès aux données
+ public/
+    css/
+       style.css             # Styles avec variables CSS
+    js/
+       app.js                # Point d'entrée principal
+       services/
+          api.js            # Service d'appels API
+       modules/
+          database.js       # Gestion des bases
+          table.js          # Gestion des tables
+          data.js           # Gestion des données
+          index.js          # Gestion des index
+       ui/
+          renderer.js       # Rendu HTML
+          modals.js         # Gestion des modales
+          contextMenu.js    # Menus contextuels
+       utils/
+           helpers.js        # Fonctions utilitaires
+    index.php                 # Point d'entrée PHP
+ views/
+    main.php                  # Template principal HTML
+ .htaccess                     # Configuration Apache
+ README.md                     # Ce fichier
 ```
 
 ---
 
-## 🔧 Architecture Technique
+##  Architecture Technique
 
 ### Backend (PHP)
 
@@ -206,7 +205,7 @@ droid_db/
 
 ---
 
-## 🎯 Utilisation
+##  Utilisation
 
 ### Connexion
 
@@ -232,14 +231,14 @@ droid_db/
 
 | Bouton | Action |
 |--------|--------|
-| ➕ | Créer une base de données |
-| 📋 | Créer une table |
-| ✏️ | Insérer une ligne |
-| 🔍 | Recherche avancée |
-| 📂 | Importer SQL |
-| 📥 | Exporter données |
-| ⚡ | Exécuter SQL |
-| 🔄 | Rafraîchir |
+| + | Créer une base de données |
+| T | Créer une table |
+| I | Insérer une ligne |
+| S | Recherche avancée |
+| F | Importer SQL |
+| E | Exporter données |
+| Q | Exécuter SQL |
+| R | Rafraîchir |
 
 ### Édition en Ligne
 
@@ -255,7 +254,7 @@ droid_db/
 
 ---
 
-## 🛠️ API Endpoints
+##  API Endpoints
 
 Tous les endpoints retournent du JSON et nécessitent une session authentifiée (sauf `auth/login`).
 
@@ -278,7 +277,7 @@ Tous les endpoints retournent du JSON et nécessitent une session authentifiée 
 
 ---
 
-## 🎨 Personnalisation
+##  Personnalisation
 
 ### Thème
 
@@ -304,7 +303,7 @@ Le nombre de lignes récupérées est limité à **100** dans `DbModel::getData(
 
 ---
 
-## 🐛 Dépannage
+##  Dépannage
 
 ### Erreur "Not authenticated"
 - Vérifiez que les cookies/session sont activés dans PHP
@@ -326,9 +325,9 @@ Le nombre de lignes récupérées est limité à **100** dans `DbModel::getData(
 
 ---
 
-## 🔒 Sécurité
+##  Sécurité
 
-⚠️ **Important** : Cette application est conçue pour un usage en environnement de développement ou local.
+ **Important** : Cette application est conçue pour un usage en environnement de développement ou local.
 
 Pour une utilisation en production :
 - Activez HTTPS
@@ -339,18 +338,14 @@ Pour une utilisation en production :
 
 ---
 
-## 📝 Changelog
+##  Changelog
 
 ### v1.0.0 (2025-02-25)
-- ✅ Version initiale
-- ✅ Interface complète avec thème sombre
-- ✅ Gestion CRUD bases, tables, données
-- ✅ Requêtes SQL et import/export
-- ✅ Architecture MVC + modules JS
+-  Version initiale
+-  Interface complète avec thème sombre
+-  Gestion CRUD bases, tables, données
 
----
-
-## 🤝 Contribution
+## Contribution
 
 Les contributions sont les bienvenues !
 
@@ -360,21 +355,21 @@ Les contributions sont les bienvenues !
 4. Pushez vers la branche (`git push origin feature/ma-feature`)
 5. Ouvrez une Pull Request
 
----
+Voir [CONTRIBUTING.md](CONTRIBUTING.md) pour plus de détails.
 
-## 📄 Licence
+## Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
+## Auteur
+
+Créé pour simplifier la gestion de bases de données MySQL.
+
+## Remerciements
+
 ---
 
-## 👨‍💻 Auteur
-
-Créé avec ❤️ pour simplifier la gestion de bases de données MySQL.
-
----
-
-## 🙏 Remerciements
+##  Remerciements
 
 - [Outfit](https://fonts.google.com/specimen/Outfit) - Police principale
 - [JetBrains Mono](https://www.jetbrains.com/lp/mono/) - Police monospace
